@@ -1,0 +1,17 @@
+[config]
+model = "gemini/gemini-3-flash-preview"
+
+[pr_description]
+publish_labels = true
+add_original_user_description = true
+generate_ai_title = false
+
+[pr_reviewer]
+auto_review = true
+require_approval = false
+enable_security_review = true
+extra_instructions = "Focus on Python best practices, async/await patterns, and web scraping security. Check for potential memory leaks and rate limiting issues."
+
+[pr_code_suggestions]
+auto_improve = false
+num_code_suggestions = 5
